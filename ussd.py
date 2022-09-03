@@ -213,6 +213,34 @@ elif user1 == '2':
             else:
                 print("Invalid Input")   
         else:
-            print("WRONG INPUT")        
+            print("WRONG INPUT")  
+    elif user4 == "3":
+        for sharedata in dict1['Data']['Share Data Plan']:
+            print(sharedata)   
+        input6 = input("--  ")
+        if input6 == "1":
+            print("Please enter subscriber\'s number:")
+            input7 = input("-->  ")
+            if len(input7) == 11:
+                print("Your request for Data sharing has been sent")
+            elif len(input7) < 11:
+                print("You have input an incomplete number")
+            elif len(input7) > 11:
+                print("You have input more than 11 digit number")
+            else:
+                print("Invalid Input")
+        elif input6 == "1":
+            print("Please enter subscriber\'s number:")
+            input8 = input("-->  ")
+            if len(input8) == 11:
+                print("Your request to unshare Data has been sent")
+            elif len(input8) < 11:
+                print("You have input an incomplete number")
+            elif len(input8) > 11:
+                print("You have input more than 11 digit number")
+            else:
+                print("Invalid Input") 
+        else:
+            print("WRONG INPUT")       
             
             
