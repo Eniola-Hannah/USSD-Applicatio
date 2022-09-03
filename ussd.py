@@ -143,6 +143,11 @@ elif user1 == '2':
                     print("Thank you for choosing Glo")
                 else:
                     print("Invalid Input")   
-            else:
-                print("WRONG INPUT")
+        else:
+            print("WRONG INPUT")
+    elif user4 == "2":
+        print(dict1['Data']['Gift Data Plan'])
+        for index, buydata in enumerate(dict1['Data']['Buy Data Plan']):
+            print(index  +1, buydata)
+            
             
