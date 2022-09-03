@@ -246,5 +246,10 @@ elif user1 == '2':
         print(dict1['Data']['Check Data Balance'])
     else:
         print("Invalid Input")       
+elif user1 == '3':
+    print("Welcome to Glo e-services \nPlease select an option")
+    for index, etopup in enumerate(dict1['E-top up']):
+        print(index  +1, etopup)
+    input9 = input("--  ")
             
             
