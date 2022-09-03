@@ -69,3 +69,9 @@ if user1 == '1':
         print("Thanks for choosing GLO")
     else:
         print("WRONG INPUT!")
+
+elif user1 == '2':
+    for index, data in enumerate(dict1['Data']):
+        print(index  +1, data)
+
+    
