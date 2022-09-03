@@ -101,4 +101,20 @@ elif user1 == '2':
                     print("Thank you for choosing Glo")
                 else:
                     print("Invalid Input")
+            elif user6 == "2":
+                for monthlyplans in dict1['Data']["Buy Data Plan"]["Monthly Plans"]:
+                    print(monthlyplans)
+                user8 = input("--  ")
+                if user8 == "1":
+                    print("CONGRATS!, you have succefully subscribed to N1000 data plan giving 3.9GB (3.9GB+1GB night) valid for 30 day.")
+                elif user8 == "2":
+                    print("CONGRATS!, you have succefully subscribed to N1500 data plan giving 7.5GB (7.5GB+4GB night) valid for 30 day.")
+                elif user8 == "3":
+                    print("CONGRATS!, you have succefully subscribed to N4000 data plan giving 9.2GB (9.2GB+4GB night) valid for 30 day.")
+                elif user8 == "4":
+                    print("CONGRATS!, you have succefully subscribed to N2500 data plan giving 10.8GB (10.8GB+4GB night) valid for 30 day.")
+                elif user8 == "0":
+                    print("Thank you for choosing Glo")
+                else:
+                    print("Invalid Input")
             
