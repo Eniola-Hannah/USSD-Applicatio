@@ -184,5 +184,35 @@ elif user1 == '2':
                 print("Thank you for choosing Glo")
             else:
                 print("Invalid Input")
+        elif input1 == "3":
+            print("Mega Plan")
+            for megaplans in dict1['Data']["Buy Data Plan"]["Mega Plans"]:
+                print(megaplans)
+            input4 = input("--  ")
+            if input4 == "1":
+                print("CONGRATULATIONS!, you have succefully subscribed to N10000 data plan giving 50GB (50GB+4GB night) valid for 30 day.")
+            elif input4 == "2":
+                print("CONGRATULATIONS!, you have succefully subscribed to N15000 data plan giving 75GB (75GB+7GB night) valid for 30 day.")
+            elif input4 == "3":
+                print("CONGRATULATIONS!, you have succefully subscribed to N18000 data plan giving 119GB (119GB+10GB night) valid for 30 day.")
+            elif input4 == "4":
+                print("CONGRATULATIONS!, you have succefully subscribed to N20000 data plan giving 138GB (138GB+12GB night) valid for 30 day.")
+            elif input4 == "0":
+                print("Thank you for choosing Glo")
+            else:
+                print("Invalid Input")
+        elif input1 == "4":
+            print("Super Mega Plan")
+            for supermegaplans in dict1['Data']['Buy Data Plan']['Super Mega Plans']:
+                print(supermegaplans)
+            input5 = input("--  ")
+            if (input5 == "1") or (input5 == "2") or (input5 == "3") or (input5 == "4"):
+                print("SORRY! Insufficient credit balance for the plan you want to buy. Please recharge your line or you can simply Borrow data. To Borrow Data now, just dial *321#")
+            elif input5 == "0":
+                print("Thank you for choosing Glo")
+            else:
+                print("Invalid Input")   
+        else:
+            print("WRONG INPUT")        
             
             
