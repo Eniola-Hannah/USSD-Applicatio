@@ -133,4 +133,16 @@ elif user1 == '2':
                     print("Thank you for choosing Glo")
                 else:
                     print("Invalid Input")
+            elif user6 == "4":
+                for supermegaplans in dict1['Data']["Buy Data Plan"]["Super Mega Plans"]:
+                    print(supermegaplans)
+                user0 = input("--  ")
+                if (user0 == "1") or (user0 == "2") or (user0 == "3") or (user0 == "4"):
+                    print("SORRY! Insufficient credit balance for the plan you want to buy. Please recharge your line or you can simply Borrow data. To Borrow Data now, just dial *321#")
+                elif user0 == "0":
+                    print("Thank you for choosing Glo")
+                else:
+                    print("Invalid Input")   
+            else:
+                print("WRONG INPUT")
             
