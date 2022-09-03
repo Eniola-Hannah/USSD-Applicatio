@@ -14,7 +14,7 @@ if user == "*777#":
 
                 'Monthly Plans': ["1. N1000 = 3.9GB 30Days incl 2GB nite", "2. N1500 = 7.5GB 30Days incl 4GB nite", "3. N2000 = 9.2GB 30Days incl 4GB", "4. N2500 = 10.8GB 30Days incl 4GB nite", "0. Cancel"],
 
-                'Mega Plans': ["1. N10000 = 50GB 30Days incl 4GB nite", "2. N15000 = 7.5GB 30Days incl 7GB nite", "3. N18000 = 119GB 30Days incl 10GB nite", "4. N20000 = 138GB 30Days incl 12GB nite", "0. Cancel"],
+                'Mega Plans': ["1. N10000 = 50GB 30Days incl 4GB nite", "2. N15000 = 75GB 30Days incl 7GB nite", "3. N18000 = 119GB 30Days incl 10GB nite", "4. N20000 = 138GB 30Days incl 12GB nite", "0. Cancel"],
 
                 'Super Mega Plans': ["1. N30000 = 225GB 30Days", "2. N36000 = 300GB 30Days", "3. N50000 = 425GB 90Days", "4. N60000 = 525GB 120Days", "0. Cancel"]
             },
@@ -114,6 +114,22 @@ elif user1 == '2':
                 elif user8 == "4":
                     print("CONGRATS!, you have succefully subscribed to N2500 data plan giving 10.8GB (10.8GB+4GB night) valid for 30 day.")
                 elif user8 == "0":
+                    print("Thank you for choosing Glo")
+                else:
+                    print("Invalid Input")
+            elif user6 == "3":
+                for megaplans in dict1['Data']["Buy Data Plan"]["Mega Plans"]:
+                    print(megaplans)
+                user9 = input("--  ")
+                if user9 == "1":
+                    print("CONGRATULATIONS!, you have succefully subscribed to N10000 data plan giving 50GB (50GB+4GB night) valid for 30 day.")
+                elif user9 == "2":
+                    print("CONGRATULATIONS!, you have succefully subscribed to N15000 data plan giving 75GB (75GB+7GB night) valid for 30 day.")
+                elif user9 == "3":
+                    print("CONGRATULATIONS!, you have succefully subscribed to N18000 data plan giving 119GB (119GB+10GB night) valid for 30 day.")
+                elif user9 == "4":
+                    print("CONGRATULATIONS!, you have succefully subscribed to N20000 data plan giving 138GB (138GB+12GB night) valid for 30 day.")
+                elif user9 == "0":
                     print("Thank you for choosing Glo")
                 else:
                     print("Invalid Input")
