@@ -39,5 +39,7 @@ if user == "*777#":
             "00. Exit": 8,
         }
     }
+    for index, dict in enumerate(dict1):
+        print(index  +1, dict)
 else:
     print("Invalid USSD Code")
