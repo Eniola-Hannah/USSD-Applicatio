@@ -241,6 +241,9 @@ elif user1 == '2':
             else:
                 print("Invalid Input") 
         else:
-            print("WRONG INPUT")       
+            print("WRONG INPUT") 
+    elif user4 == "4":
+        print(dict1['Data']['Check Data Balance'])
+   
             
             
