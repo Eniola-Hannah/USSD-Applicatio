@@ -43,3 +43,29 @@ if user == "*777#":
         print(index  +1, dict)
 else:
     print("Invalid USSD Code")
+
+user1 = input("--  ")
+if user1 == '1':
+    for index, registernin in enumerate(dict1['Register NIN']):
+        print(index  +1, registernin)
+
+    user2 = input("--  ")
+    if user2 == "1":
+        print(dict1['Register NIN']['Enter NIN'])
+        
+        user3 = input("---> ")
+        if len(user3) == 11:
+            print("you have successfully submitted your NIN, we will send you an SMS shortly after your NIN has been verified")
+        elif len(user3) < 11:
+            print("Dear Subscriber, you have input an incomplete NIN")
+        elif len(user3) > 11:
+            print("Dear Subscriber, you have input more than the 11 digit NIN number")
+        else:
+            print("Invalid Input") 
+
+    elif user2 == "2":
+        print(dict1['Register NIN']['Check NIN Status'])
+    elif user2 == "3":
+        print("Thanks for choosing GLO")
+    else:
+        print("WRONG INPUT!")
