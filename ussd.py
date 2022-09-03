@@ -149,5 +149,40 @@ elif user1 == '2':
         print(dict1['Data']['Gift Data Plan'])
         for index, buydata in enumerate(dict1['Data']['Buy Data Plan']):
             print(index  +1, buydata)
+        input1 = input("--  ")
+        if input1 == "1":
+            print("Mini Plan")
+            for miniplans in dict1['Data']["Buy Data Plan"]["Mini Plans"]:
+                print(miniplans)
+            input2 = input("--  ")
+            if input2 == "1":
+                print("CONGRATS!, you have succefully subscribed to N100 data plan giving 150MB (115MB+35MB night) valid for 1 day.")
+            elif input2 == "2":
+                print("CONGRATS!, you have succefully subscribed to N200 data plan giving 350MB (350MB+110MB night) valid for 2 day.")
+            elif input2 == "3":
+                print("CONGRATS!, you have succefully subscribed to N500 data plan giving 1.8GB (1.8GB+1GB night) valid for 14 day.")
+            elif input2 == "4":
+                print("CONGRATS!, you have succefully subscribed to N50 data plan giving 50MB (50MB+5MB night) valid for 1 day.")
+            elif input2 == "0":
+                print("Thank you for choosing Glo")
+            else:
+                print("Invalid Input")
+        elif input1 == "2":
+            print("Monthly Plan")
+            for monthlyplans in dict1['Data']["Buy Data Plan"]["Monthly Plans"]:
+                print(monthlyplans)
+            input3 = input("--  ")
+            if input3 == "1":
+                print("CONGRATS!, you have succefully subscribed to N1000 data plan giving 3.9GB (3.9GB+1GB night) valid for 30 day.")
+            elif input3 == "2":
+                print("CONGRATS!, you have succefully subscribed to N1500 data plan giving 7.5GB (7.5GB+4GB night) valid for 30 day.")
+            elif input3 == "3":
+                print("CONGRATS!, you have succefully subscribed to N4000 data plan giving 9.2GB (9.2GB+4GB night) valid for 30 day.")
+            elif input3 == "4":
+                print("CONGRATS!, you have succefully subscribed to N2500 data plan giving 10.8GB (10.8GB+4GB night) valid for 30 day.")
+            elif input3 == "0":
+                print("Thank you for choosing Glo")
+            else:
+                print("Invalid Input")
             
             
