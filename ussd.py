@@ -74,4 +74,31 @@ elif user1 == '2':
     for index, data in enumerate(dict1['Data']):
         print(index  +1, data)
 
-    
+    user4= input("-- ")
+    if user4 == "1":
+        print("1. Proceed(Auto-Renew)\n" "2. Proceed(One-Off)")
+
+        user5 = input("-- ")
+        if (user5 == "1") or (user5 == "2"):
+            for index, buydata in enumerate(dict1['Data']['Buy Data Plan']):
+                print(index  +1, buydata)
+
+            user6 = input("--  ")
+            if user6 == "1":
+                for miniplans in dict1['Data']["Buy Data Plan"]["Mini Plans"]:
+                    print(miniplans)
+
+                user7 = input("--  ")
+                if user7 == "1":
+                    print("CONGRATS!, you have succefully subscribed to N100 data plan giving 150MB (115MB+35MB night) valid for 1 day.")
+                elif user7 == "2":
+                    print("CONGRATS!, you have succefully subscribed to N200 data plan giving 350MB (350MB+110MB night) valid for 2 day.")
+                elif user7 == "3":
+                    print("CONGRATS!, you have succefully subscribed to N500 data plan giving 1.8GB (1.8GB+1GB night) valid for 14 day.")
+                elif user7 == "4":
+                    print("CONGRATS!, you have succefully subscribed to N50 data plan giving 50MB (50MB+5MB night) valid for 1 day.")
+                elif user7 == "0":
+                    print("Thank you for choosing Glo")
+                else:
+                    print("Invalid Input")
+            
