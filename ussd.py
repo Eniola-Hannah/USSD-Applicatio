@@ -295,5 +295,41 @@ elif user1 == '3':
                 print("invalid input")
         else:
             print("invalid input")
+    elif input9 == "2":
+        print('Data Plan Purchase')
+        for  data in dict1['E-top up']['Data']:
+            print(data)
+        enter5 = input("--  ")
+        if enter5 == "1":
+            for self in dict1['E-top up']['Data']['1. Self']:
+                print(self)
+        elif enter5 == "2":
+            print("Please enter phone number: \nGlo line only")
+            enter6 = input("--  ")
+            if len(enter6) == 11:
+                print("Enter Amount")
+                enter7 = input("--  ")
+                if len(enter7) >= 2:
+                    print("Your request is being processed, we will send you an SMS shortly  \nThank you for using Glo e-services, the simplest way to recharge and buy data for family, friends and yourself")
+                else:
+                    print("Invalid input")
+            else:
+                print("WRONG INPUT")
+        elif enter5 == "00":
+            print("Thank you for using Glo e-services, the simplest way to recharge and buy data for family, friends and yourself")
+        else:
+            print("WRONG INPUT")
+    else:
+        print("WRONG INPUT")
+elif user1 == '4':
+    for berekete in dict1['Berekete 10X']:
+        print(berekete)
+    enter0 = input("--  ")
+    if enter0 == "1":
+        print(dict1['Berekete 10X']['1. Migrate Now'])
+    elif (enter0 == "0") or (enter0 == "00"):
+        print("Thank you for choosing Glo")
+else:
+    print("INVALID INPUT!")
             
             
