@@ -251,5 +251,49 @@ elif user1 == '3':
     for index, etopup in enumerate(dict1['E-top up']):
         print(index  +1, etopup)
     input9 = input("--  ")
+    if input9 == "1":
+        for index, airtime in enumerate(dict1['E-top up']['Airtime']):
+            print(index  +1, airtime)
+        input0 = input("--  ")
+        if input0 == "1":
+            for recharges in dict1['E-top up']['Airtime']['5X Recharges']:
+                print(recharges)
+            enter = input("--  ")
+            if (enter == "1") or (enter == "2") or (enter == "3") or (enter == "4"):
+                print("Your request is being processed, we will send you an SMS shortly")
+            elif enter == "0":
+                print("Thanks for choosing GLO")
+            else:
+                ("Invalid Input")
+        elif input0 == "2":
+            print("Airtime Purchase")
+            for regularrecharges in dict1['E-top up']['Airtime']['Regular Recharges']:
+                print(regularrecharges)
+
+            enter1 = input("--  ")
+            if enter1 == "1":
+                print("Please Enter Amount:")
+
+                enter2 = input("-- ")
+                if len(enter2) >= 2:
+                    print("Your request is being processed, we will send you an SMS shortly \nThank you for using Glo e-services, the simplest way to recharge and buy data for family, friends and yourself")
+                else:
+                    print("Invalid input")
+            elif enter1 == "2":
+                print("Please enter phone number: \nGlo line only")
+                enter3 = input("--  ")
+                if len(enter3) == 11:
+                    print("Enter Amount")
+                    enter4 = input("--  ")
+                    if len(enter2) >= 2:
+                        print("Your request is being processed, we will send you an SMS shortly  \nThank you for using Glo e-services, the simplest way to recharge and buy data for family, friends and yourself")
+                    else:
+                        print("Invalid input")
+                else:
+                    print("Invalid input")
+            else:
+                print("invalid input")
+        else:
+            print("invalid input")
             
             
