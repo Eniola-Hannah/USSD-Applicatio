@@ -229,7 +229,7 @@ elif user1 == '2':
                 print("You have input more than 11 digit number")
             else:
                 print("Invalid Input")
-        elif input6 == "1":
+        elif input6 == "2":
             print("Please enter subscriber\'s number:")
             input8 = input("-->  ")
             if len(input8) == 11:
@@ -269,11 +269,9 @@ elif user1 == '3':
             print("Airtime Purchase")
             for regularrecharges in dict1['E-top up']['Airtime']['Regular Recharges']:
                 print(regularrecharges)
-
             enter1 = input("--  ")
             if enter1 == "1":
                 print("Please Enter Amount:")
-
                 enter2 = input("-- ")
                 if len(enter2) >= 2:
                     print("Your request is being processed, we will send you an SMS shortly \nThank you for using Glo e-services, the simplest way to recharge and buy data for family, friends and yourself")
@@ -301,8 +299,13 @@ elif user1 == '3':
             print(data)
         enter5 = input("--  ")
         if enter5 == "1":
-            for self in dict1['E-top up']['Data']['1. Self']:
-                print(self)
+            for selfplan in dict1['E-top up']['Data']['1. Self']:
+                print(selfplan)
+            userInput = input("> ")
+            if (userInput == "1") or (userInput == "2") or (userInput == "3") or (userInput == "4"):
+                print("Your request is being processed, we will send you an SMS shortly  \nThank you for using Glo e-services") 
+            else:
+                print("Invalid Input")
         elif enter5 == "2":
             print("Please enter phone number: \nGlo line only")
             enter6 = input("--  ")
@@ -321,6 +324,7 @@ elif user1 == '3':
             print("WRONG INPUT")
     else:
         print("WRONG INPUT")
+
 elif user1 == '4':
     for berekete in dict1['Berekete 10X']:
         print(berekete)
